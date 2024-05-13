@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="textColor">#2d5f9c</color>
+    <color name="toolbarColorLight">#F7F2FA</color>
+    <color name="toolbarColorDark">#212121</color>
+    <color name="iconColor">#535151</color>
+    <color name="underline">#79747E</color>
+    <color name="editText">#8DBEBBC1</color>
+    <color name="favoriteColor">#C6283B</color>
+    <color name="buttonColor">#1B3D67</color>
+    <color name="radioButtonBackground">#B5C6DC</color>
+    <!--snackbarBgColor-->
+    <color name="snackbarBgColor">#CC5E5E5E</color>
+</resources>

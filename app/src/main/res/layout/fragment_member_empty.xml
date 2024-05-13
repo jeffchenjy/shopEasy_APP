@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="bottom"
+       android:orientation="vertical"
+       android:background="@color/textColor">
+       <TextView
+           android:id="@+id/titleTextView"
+           style="@style/logInTextColor"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="30dp"
+           android:text="Welcome !!"
+           android:textSize="30sp"
+           android:layout_marginTop="35dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/logbg"
+           android:orientation="vertical"
+           android:paddingVertical="40dp"
+           android:gravity="center_horizontal"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent">
+           <LinearLayout
+               android:id="@+id/logoLayout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+               <ImageView
+                   android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:src="@drawable/shopeasy_logo"
+                   android:layout_marginRight="20dp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="30sp"
+                   android:text="@string/app_name"
+                   android:textAlignment="center"
+                   android:textColor="@color/textColor"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="320dp"
+               android:orientation="vertical"
+               android:paddingHorizontal="30dp">
+               <Button
+                   android:id="@+id/logInButton"
+                   style="@style/ButtonStyle"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:gravity="center"
+                   android:text="@string/login"
+                   android:textColor="@color/white"
+                   android:textSize="14sp"
+                   app:cornerRadius="20dp" />
+               <Button
+                   android:id="@+id/signUpButton"
+                   style="@style/ButtonStyle"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:text="@string/signUp"
+                   android:textColor="@color/white"
+                   android:textSize="14sp"
+                   app:cornerRadius="20dp" />
+           </LinearLayout>
+       </LinearLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

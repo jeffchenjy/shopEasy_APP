@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">ShopEasy</string>
+
+    <string name="connectTimeOut">接続がタイムアウトしました</string>
+    <string name="connectFailed">インターネットの接続に失敗しました</string>
+    <string name="serverError">サーバー側で問題が発生しました，しばらく待って再度お試しください</string>
+    <!--bottomNavigation-->
+    <string name="home">ホーム</string>
+    <string name="collection">お気に入り</string>
+    <string name="cart">カート</string>
+    <string name="member">メンバー</string>
+    <!--ViewPager-->
+    <string name="book">本</string>
+    <string name="appliances">装置</string>
+    <string name="homeAppliances">家電</string>
+    <string name="computer">パソコン</string>
+    <string name="cantGetData">データ取得できません</string>
+    <string name="noData">商品情報が存在しません</string>
+    <string name="refresh">更新する</string>
+    <!--RecyclerViewText-->
+    <string name="japaneseBook">日本語の本</string>
+    <string name="chineseBook">中国語の本</string>
+    <string name="magazine">雑誌</string>
+    <string name="keyboard">キーボード</string>
+    <string name="mouse">マウス</string>
+    <string name="camera">カメラ</string>
+    <string name="audio">オーディオ</string>
+    <!--Navigation-->
+    <string name="aboutAppTitle">アプリ紹介</string>
+    <string name="copyrightTitle">著作権</string>
+    <string name="exit">Exit</string>
+    <!--Dialog-->
+    <string name="escTitle">終了</string>
+    <string name="esc">このアプリを終了しますか?</string>
+    <string name="copyright">Copyright © 2024 Jhih-Yong, Chen</string>
+    <string name="aboutApp">Hello</string>
+    <string name="ok">はい</string>
+    <string name="no">いいえ</string>
+    <string name="cancel">キャンセル</string>
+    <!--Fragment Title-->
+    <string name="mainTitle">ホーム</string>
+    <string name="showItemTitle">アイテム</string>
+    <string name="favoriteTitle">お気に入り</string>
+    <!--show item title-->
+    <string name="priceTitle">特別価格(JPY¥) :</string>
+    <string name="authorTitle">作者 :</string>
+    <string name="companyTitle">出版社 :</string>
+    <string name="compTitle">会社 :</string>
+    <string name="descriptionTitle">商品説明 :</string>
+    <string name="intoFavorite">商品がお気に入りに追加されました</string>
+    <string name="alreadyIntoFavorite">すでにお気に入りに追加されています</string>
+    <string name="buyButton">直接購入</string>
+    <string name="addToCart">カートに追加</string>
+    <string name="addedToCart">商品がショッピングカートに追加されました</string>
+    <string name="alreadyInCart">商品はすでにショッピングカートに入っています</string>
+    <string name="noLogin">ログインしていない</string>
+    <!-- Favorite Fragment -->
+    <string name="inventory">在庫あり</string>
+    <string name="notInventory">在庫切れ</string>
+    <string name="deleteMerchandise">削除</string>
+    <!-- cart Fragment -->
+    <string name="shoppingCart">ショッピングカート</string>
+    <string name="proceedToCheckout">レジに進む</string>
+    <string name="quantity">商品数 : </string>
+    <string name="total">小計(JPY¥) : </string>
+    <string name="addToFavorite">お気に入りに追加</string>
+    <string name="cartEmpty">カートに商品がありません</string>
+    <string name="checkout">レジ</string>
+    <string name="payment">支払方法</string>
+    <string name="shippingMethod">商品発送方法</string>
+    <string name="homeDelivery">ヤマト運輸 [送料(JPY¥): 756円]</string>
+    <string name="smallCourier">ゆうパック [送料(JPY¥): 640円]</string>
+    <string name="mailService">普通郵便 [送料(JPY¥): 250円]</string>
+    <string name="creditCard">クレジットカード(Credit Card)</string>
+    <string name="cashOnDelivery">代金引換</string>
+    <string name="customerInformation">注文者情報</string>
+    <string name="recipientInformation">受取人情報</string>
+    <string name="recipient">受取人の名前</string>
+    <string name="shippingAddress">お届け先住所</string>
+    <string name="sameAsCustomer">注文者と同じ</string>
+    <string name="deliveryTime">配達時間</string>
+    <string name="noLimit">制限なし</string>
+    <string name="amTime">8:00 ～ 12:00</string>
+    <string name="pmTime">14:00 ～ 18:00</string>
+    <string name="previous">前へ</string>
+    <string name="next">次へ</string>
+    <string name="shippingAddressEmpty">お届け先の住所は空にできません</string>
+    <string name="shippingDataError">配送情報が不完全です。再度ご確認ください。</string>
+    <string name="finalCheck">最終確認</string>
+    <string name="merchandiseQuantityPrice">商品数と小計</string>
+    <string name="merchandiseInfo">商品情報</string>
+    <string name="check">確認</string>
+    <!-- Member Page -->
+    <string name="orderHistory">注文履歴</string>
+    <string name="toBeShipped">出荷準備</string>
+    <string name="shipped">出荷済み</string>
+    <string name="username">ユーザーネーム</string>
+    <string name="mail">メール</string>
+    <string name="editProfile">プロフィール設定</string>
+    <string name="editAccount">アカウント設定</string>
+    <string name="logout">ログアウト</string>
+    <string name="logoutMessage">ログアウトしますか?</string>
+    <!-- Order Page -->
+    <string name="customer">注文者の名前</string>
+    <string name="orderCancel">注文をキャンセル</string>
+    <string name="noOrder">注文情報が存在しません</string>
+    <string name="orderInfo">注文情報</string>
+    <!-- SignUp Page-->
+    <string name="signUp">新規登録</string>
+    <string name="email">メールアドレス</string>
+    <string name="password">パスワード</string>
+    <string name="signUpBtn">入力内容を確認</string>
+    <string name="isMember">すでにメンバーですか? ログイン</string>
+    <string name="usernameEmpty">ユーザーネームを空にすることはできません</string>
+    <string name="emailEmpty">メールアドレスを空にすることはできません</string>
+    <string name="passwordEmpty">パスワードを空にすることはできません</string>
+    <string name="invalidEmailAddress">メールアドレスは無効です</string>
+    <string name="errorUsernameMessage">名前が短すぎます(3文字以上の英数字文字)</string>
+    <string name="errorPasswordMessage">パスワードが短すぎます(8文字以上の英数字文字)</string>
+    <string name="illegalCharacters">不正な文字が含まれています</string>
+    <string name="signUpSuccess">サインアップが成功しました</string>
+    <!-- LogIn Page-->
+    <string name="login">ログイン</string>
+    <string name="forgotPassword">パスワードを忘れた?</string>
+    <string name="newMember">新メンバー? 新規登録</string>
+    <string name="errorEmailMessage">メールアドレスが正しくありません</string>
+    <string name="loginSuccess">ログイン成功</string>
+    <string name="loginFailed">ログインに失敗しました。メールアドレスとパスワードを確認してください</string>
+    <!-- Edit Account Page -->
+    <string name="saveAccount">アカウント情報を更新</string>
+    <string name="deleteAccount">アカウントを削除</string>
+    <string name="newUsername">新しいユーザー ID</string>
+    <string name="newEmail">新しいメールアドレス</string>
+    <string name="newPassword">新しいパスワード</string>
+    <string name="userAccountDelete">本当にこのアカウントを削除しますか？\nこの操作を取り消せません</string>
+    <string name="dataUpdateSuccess">データが正常に更新されました</string>
+    <string name="dataUpdateFailed">データが更新されませんでした</string>
+    <string name="needReLogin">再度ログインしてください</string>
+    <!-- Edit Profile Page -->
+    <string name="nickname">ニックネーム</string>
+    <string name="phone">電話番号</string>
+    <string name="gender">性別</string>
+    <string name="country">国/地域</string>
+    <string name="address">住所</string>
+    <string name="bornYear">生まれた年</string>
+    <string name="bornDate">誕生日</string>
+    <string name="gender_male">男性</string>
+    <string name="gender_female">女性</string>
+    <string name="unselect">未選択</string>
+    <string name="unchoose">どちらも選ばない</string>
+    <string name="saveProfile">プロフィール情報を更新</string>
+    <string name="closeBottomSheet">完了</string>
+    <string name="nicknameEmpty">ニックネームを空にすることはできません</string>
+    <string name="phoneEmpty">電話番号を空にすることはできません</string>
+    <string name="errorPhoneMessage">電話番号が短すぎます!</string>
+    <!-- dialog_passwd_verify -->
+    <string name="id_verify">パスワード入力</string>
+    <string name="id_verify_massage">パスワードを入力してください。</string>
+    <string name="id_verify_hint">現在のパスワード</string>
+    <string name="id_verify_ok">OK</string>
+    <string name="passwordError">パスワードが間違っています</string>
+    <!-- dialog_passwd_forgot -->
+    <string name="forgotPasswordMassage">メールアドレスを入力してください。</string>
+    <string name="forgotPasswordHint">現在のメールアドレス</string>
+    <string name="changeToNewPassword">新しいパスワード</string>
+    <string name="passwordUpdateSuccess">パスワードが正常に更新されました</string>
+    <string name="passwordUpdateFailed">パスワードの更新に失敗しました</string>
+</resources>

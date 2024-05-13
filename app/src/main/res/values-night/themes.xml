@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Shopping_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/textColor</item> <!-- 設定主色調為藍色 -->
+        <item name="colorPrimaryVariant">@color/buttonColor</item> <!-- 設定主色調的變體 -->
+        <item name="colorOnPrimary">@color/toolbarColorDark</item> <!-- 設定在主色調上的文字顏色 -->
+        <item name="android:statusBarColor">@color/toolbarColorDark</item>
+        <item name="android:navigationBarColor">@color/toolbarColorDark</item>
+        <item name="fontFamily">@font/rounded_mplus</item>
+        <item name="snackbarStyle">@style/MySnackBarStyle</item>
+    </style>
+    <style name="toolBartextColor">
+        <item name="titleTextColor">@color/textColor</item>
+    </style>
+    <style name="textColor">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <style name="ScreenBackgroundColor">
+        <item name="android:background">@color/toolbarColorDark</item>
+    </style>
+    <style name="BottomSheetBackgroundStyle">
+        <item name="android:background">@drawable/bottomsheetbg</item>
+        <item name="android:backgroundTint">@color/toolbarColorDark</item>
+    </style>
+    <style name="MySnackBarStyle" parent="Widget.Material3.Snackbar">
+        <item name="android:layout_margin">40dp</item>
+    </style>
+    <style name="ButtonStyle" parent="ShapeAppearanceOverlay.Material3.FloatingActionButton">
+        <item name="backgroundTint">@color/buttonColor</item>
+        <item name="android:fontFamily">@font/rounded_mplus</item>
+    </style>
+    <style name="inputTextColor">
+        <item name="android:textColor">@color/toolbarColorDark</item>
+    </style>
+    <style name="logInTextColor">
+        <item name="android:textColor">@color/toolbarColorLight</item>
+    </style>
+    <style name="MySpinnerDatePickerStyle">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:textColor">@color/toolbarColorLight</item>
+        <item name="android:background">@color/toolbarColorDark</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/drawHome"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_empty"/>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/drawAbout"
+                android:icon="@drawable/ic_about"
+                android:title="@string/aboutAppTitle" />
+            <item
+                android:id="@+id/drawCopyright"
+                android:icon="@drawable/ic_copyright"
+                android:title="@string/copyrightTitle" />
+            <item
+                android:id="@+id/drawExit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+
+</menu>
