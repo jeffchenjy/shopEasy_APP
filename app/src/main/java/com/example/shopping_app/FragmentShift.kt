@@ -19,6 +19,7 @@ class FragmentShift {
         const val CART_FINAL_CHECK_FRAGMENT_SHIFT_TAG = "cartFinalCheckFragment"
         const val MEMBER_ORDER_LIST_FRAGMENT_SHIFT_TAG = "MemberOrderListFragment"
         const val ORDER_INFO_FRAGMENT_SHIFT_TAG = "OrderInfoFragment"
+        const val LANGUAGE_FRAGMENT_SHIFT_TAG = "LanguageFragment"
     }
     fun goToNextFragment(fragment: Fragment, activity: FragmentActivity, tag: String, backStackName: String) {
         activity.supportFragmentManager.beginTransaction()

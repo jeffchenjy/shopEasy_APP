@@ -122,9 +122,7 @@ class EditProfileFragment: Fragment() {
         "日本", "ニュージーランド", "フィンランド", "南アフリカ", "ロシア",
         "其他"
     )
-    private val genderList = listOf<String>(
-        "どちらも選ばない", "男性", "女性"
-    )
+    private lateinit var genderList: List<String>
     private val activityResultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -192,6 +190,9 @@ class EditProfileFragment: Fragment() {
             requireActivity(),
             R.id.bottomNavigation,
             View.GONE
+        )
+        genderList = listOf<String>(
+            getString(R.string.unchoose), getString(R.string.gender_male), getString(R.string.gender_female)
         )
         findView(view)
         setToolbar()

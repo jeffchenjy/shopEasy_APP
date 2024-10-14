@@ -6,7 +6,14 @@
         android:id="@+id/drawHome"
         android:title="@string/home"
         android:icon="@drawable/ic_home_empty"/>
-
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/drawLanguage"
+                android:icon="@drawable/ic_translate"
+                android:title="@string/languageSettings" />
+        </menu>
+    </item>
     <item android:title="About">
         <menu>
             <item

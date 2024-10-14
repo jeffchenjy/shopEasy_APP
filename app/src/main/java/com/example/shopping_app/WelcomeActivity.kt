@@ -43,6 +43,7 @@ class WelcomeActivity: AppCompatActivity() {
         encryptionUtils = EncryptionUtils(this)
         connectToServerHelper = ConnectToServerHelper()
         memberInfoHelper = MemberInfoHelper()
+        LocaleHelper.loadLocale(this)
     }
     private fun checkMemberLogin() {
         if (encryptionUtils.containsKey(SharedPreferencesEmailKey) && encryptionUtils.containsKey(SharedPreferencesPasswordKey)) {

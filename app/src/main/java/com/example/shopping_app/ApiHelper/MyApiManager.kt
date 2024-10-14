@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 object MyApiManager {
     const val username = "GetApi"
     const val password = "qwer2196"
-    const val baseUrl = "https://shopeasy-zgnu.onrender.com/"
+    const val baseUrl = "http://192.168.50.223:8080/"
     var token: String? = ""
 
     private val okHttpClient = OkHttpClient.Builder()

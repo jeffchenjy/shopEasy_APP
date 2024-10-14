@@ -42,11 +42,11 @@ class OrderRecyclerViewAdapter(private var view: View, private var context: Cont
         val recipientName = data[2]
         val addedDate = data[3]
         val order_price = data[4]
-        holder.order_id.text = "注文番号 : $orderID"
+        holder.order_id.text = context.getString(R.string.orderID) + orderID
         holder.customer_name.text = context.getString(R.string.customer) + " : " + customerName
         holder.recipient_name.text = context.getString(R.string.recipient) + " : " + recipientName
-        holder.added_date.text = "追加日 : $addedDate"
-        holder.order_price.text = "小計(送料込み) : ¥ $order_price 円"
+        holder.added_date.text = context.getString(R.string.orderDate) + addedDate
+        holder.order_price.text = context.getString(R.string.orderPrice) + order_price
 
         holder.deleteButton.setOnClickListener{
             connectToServerHelper.deleteOrder(view, context, orderID) {

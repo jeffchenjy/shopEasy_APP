@@ -19,6 +19,8 @@ import com.example.shopping_app.ApiHelper.ConnectToServerHelper.Companion.clearA
 import com.example.shopping_app.ApiHelper.RegisterHelper.Companion.memberLoginFlag
 import com.example.shopping_app.EncryptionUtils.Companion.SharedPreferencesEmailKey
 import com.example.shopping_app.EncryptionUtils.Companion.SharedPreferencesPasswordKey
+import com.example.shopping_app.Fragment.EditAccountFragment
+import com.example.shopping_app.Fragment.LanguageFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.navigation.NavigationBarView
 import com.google.android.material.navigation.NavigationView
@@ -97,6 +99,13 @@ class HomeFragment : Fragment() {
             when(item.itemId) {
                 R.id.drawHome -> {
 
+                }
+                R.id.drawLanguage -> {
+                    fragmentShift.goToNextFragment(
+                        LanguageFragment(), requireActivity(),
+                        FragmentShift.LANGUAGE_FRAGMENT_SHIFT_TAG,
+                        FragmentShift.LANGUAGE_FRAGMENT_SHIFT_TAG
+                    )
                 }
                 R.id.drawAbout -> {
                     aboutDialog()

@@ -137,7 +137,7 @@ class CartFinalCheckFragment: Fragment() {
         finalDeliveryTime.text = deliveryTime
         countQuantityAndPrice()
 
-        finalQuantityPrice.text = "$totalQuantity 個の商品，小計(送料込み) : ¥ $totalPrice 円"
+        finalQuantityPrice.text = totalQuantity + getString(R.string.orderInfoString) + totalPrice
         recyclerViewInit()
     }
     private fun countQuantityAndPrice() {
@@ -165,7 +165,7 @@ class CartFinalCheckFragment: Fragment() {
         myCartList = createCartList()
         if(myCartList.isNotEmpty()) {
             finalItemRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-            myFinalCheckRecyclerViewAdapter = FinalCheckRecyclerViewAdapter(myCartList)
+            myFinalCheckRecyclerViewAdapter = FinalCheckRecyclerViewAdapter(requireContext(), myCartList)
             finalItemRecyclerView.adapter = myFinalCheckRecyclerViewAdapter
         }
     }

@@ -1,6 +1,7 @@
 package com.example.shopping_app.RecyclerViewHelper
 
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,7 @@ import com.example.shopping_app.ItemClickSupportViewHolder
 import com.example.shopping_app.R
 
 
-class FinalCheckRecyclerViewAdapter(private var dataList: List<List<String>>) : RecyclerView.Adapter<FinalCheckRecyclerViewAdapter.ViewHolder>() {
+class FinalCheckRecyclerViewAdapter(private var context: Context, private var dataList: List<List<String>>) : RecyclerView.Adapter<FinalCheckRecyclerViewAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         ItemClickSupportViewHolder {
         val imageView: ImageView = itemView.findViewById(R.id.item_image)
@@ -49,12 +50,12 @@ class FinalCheckRecyclerViewAdapter(private var dataList: List<List<String>>) : 
         holder.item_price.text = "JPY¥ $itemPrice"
         val itemInventoryNumber = itemInventory.toInt()
         if (itemInventoryNumber == 0) {
-            holder.item_inventory.text = "在庫切れ"
+            holder.item_inventory.text = context.getString(R.string.notInventory)
         } else {
-            holder.item_inventory.text = "在庫あり"
+            holder.item_inventory.text = context.getString(R.string.inventory)
         }
-        holder.item_quantity.text = "数量 : $itemQuantity"
-        holder.item_addedDate.text = "追加日 : $itemAddedDate"
+        holder.item_quantity.text = context.getString(R.string.itemNumber) + itemQuantity
+        holder.item_addedDate.text = context.getString(R.string.orderDate) + itemAddedDate
         // 清除imageView上的圖片
         holder.imageView.setImageDrawable(null)
         // 使用 Glide 或其他圖片載入庫載入圖片

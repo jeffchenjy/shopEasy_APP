@@ -90,7 +90,7 @@ class OrderInfoFragment: Fragment() {
                 payment.text = orderResponse.orderInfo.payment.payment
                 val totalQuantity = orderResponse.orderInfo.payment.totalQuantity
                 val totalPrice = orderResponse.orderInfo.payment.totalPrice
-                quantityPrice.text = "$totalQuantity 個の商品，小計(送料込み) : ¥ $totalPrice 円"
+                quantityPrice.text = totalQuantity + getString(R.string.orderInfoString) + totalPrice
                 customerName.text = orderResponse.orderInfo.customer.name
                 customerPhone.text = orderResponse.orderInfo.customer.phone
                 customerEmail.text = orderResponse.orderInfo.customer.email
@@ -107,7 +107,7 @@ class OrderInfoFragment: Fragment() {
         myOrderItemList = createOrderItemList()
         if(myOrderItemList.isNotEmpty()) {
             orderItemRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-            myFinalCheckRecyclerViewAdapter = FinalCheckRecyclerViewAdapter(myOrderItemList)
+            myFinalCheckRecyclerViewAdapter = FinalCheckRecyclerViewAdapter(requireContext(), myOrderItemList)
             orderItemRecyclerView.adapter = myFinalCheckRecyclerViewAdapter
         }
     }

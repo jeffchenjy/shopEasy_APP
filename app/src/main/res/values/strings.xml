@@ -26,6 +26,7 @@
     <string name="camera">カメラ</string>
     <string name="audio">オーディオ</string>
     <!--Navigation-->
+    <string name="languageSettings">言語設定</string>
     <string name="aboutAppTitle">アプリ紹介</string>
     <string name="copyrightTitle">著作権</string>
     <string name="exit">Exit</string>
@@ -165,4 +166,14 @@
     <string name="changeToNewPassword">新しいパスワード</string>
     <string name="passwordUpdateSuccess">パスワードが正常に更新されました</string>
     <string name="passwordUpdateFailed">パスワードの更新に失敗しました</string>
+
+    <string name="orderID">注文番号 : </string>
+    <string name="orderDate">追加日 : </string>
+    <string name="orderPrice">小計(送料込み) : ¥ </string>
+    <string name="itemNumber">数量 : </string>
+    <string name="itemError">商品数を空にすることはできません</string>
+    <string name="itemZero">商品数をゼロにすることはできません</string>
+    <string name="orderInfoString">個の商品，小計(送料込み) : ¥ </string>
+    <string name="japanese">日本語</string>
+    <string name="chinese">繁體中文</string>
 </resources>

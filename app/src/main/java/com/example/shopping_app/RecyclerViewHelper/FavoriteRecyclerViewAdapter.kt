@@ -60,11 +60,11 @@ class FavoriteRecyclerViewAdapter(private var basicView: View, private var conte
         holder.item_price.text = "JPY¥$itemPrice"
         val itemInventoryNumber = itemInventory.toInt()
         if (itemInventoryNumber == 0) {
-            holder.item_inventory.text = "在庫切れ"
+            holder.item_inventory.text = context.getString(R.string.notInventory)
         } else {
-            holder.item_inventory.text = "在庫あり"
+            holder.item_inventory.text = context.getString(R.string.inventory)
         }
-        holder.item_addedDate.text = "追加日 : $itemAddedDate"
+        holder.item_addedDate.text = context.getString(R.string.orderDate) + itemAddedDate
         //holder.item_inventory.text = "Inventory: $itemInventory"
 
         // 清除imageView上的圖片

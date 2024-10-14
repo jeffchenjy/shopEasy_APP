@@ -70,11 +70,11 @@ class CartRecyclerViewAdapter(private var basicView: View, private var context: 
         holder.item_price.text = "JPY¥ $itemPrice"
         val itemInventoryNumber = itemInventory.toInt()
         if (itemInventoryNumber == 0) {
-            holder.item_inventory.text = "在庫切れ"
+            holder.item_inventory.text = context.getString(R.string.notInventory)
         } else {
-            holder.item_inventory.text = "在庫あり"
+            holder.item_inventory.text = context.getString(R.string.inventory)
         }
-        holder.item_addedDate.text = "追加日 : $itemAddedDate"
+        holder.item_addedDate.text = context.getString(R.string.orderDate) + itemAddedDate
         var finalQuantity = 1
         holder.quantityEditText.setText(itemQuantity)
         holder.quantityEditText.addTextChangedListener(object : TextWatcher {
@@ -90,14 +90,14 @@ class CartRecyclerViewAdapter(private var basicView: View, private var context: 
                 when {
                     s.isNullOrEmpty() -> {
                         holder.quantityTextInputLayout.error = null
-                        holder.quantityEditText.error = "商品数を空にすることはできません"
+                        holder.quantityEditText.error = context.getString(R.string.itemError)
                     }
                     RegisterHelper.containsNumberCharacter(quantity) -> {
-                        holder.quantityTextInputLayout.error = "不正な文字が含まれています"
+                        holder.quantityTextInputLayout.error = context.getString(R.string.illegalCharacters)
                         holder.quantityEditText.error = null
                     }
                     quantity == "0" -> {
-                        holder.quantityTextInputLayout.error = "商品数をゼロにすることはできません"
+                        holder.quantityTextInputLayout.error = context.getString(R.string.itemZero)
                         finalQuantity = quantity.toInt()
                     }
                     quantity == itemQuantity -> {
